@@ -1,0 +1,39 @@
+Source: libtest-minimumversion-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Vincent Danjean <vdanjean@debian.org>,
+           Ryan Niebur <ryan@debian.org>,
+           Jonathan Yu <jawnsy@cpan.org>,
+           gregor herrmann <gregoa@debian.org>,
+           Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: libfile-find-rule-perl,
+                     libfile-find-rule-perl-perl,
+                     libperl-minimumversion-perl (>= 1.32),
+                     perl (>= 5.13.10) | libcpan-meta-perl,
+                     perl (>= 5.21.6) | libtest-simple-perl (>= 1.001010) | libtest-tester-perl,
+                     perl
+Standards-Version: 3.9.7
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libtest-minimumversion-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libtest-minimumversion-perl.git
+Homepage: https://metacpan.org/release/Test-MinimumVersion
+
+Package: libtest-minimumversion-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libfile-find-rule-perl,
+         libfile-find-rule-perl-perl,
+         libperl-minimumversion-perl (>= 1.32),
+         perl (>= 5.13.10) | libcpan-meta-perl
+Description: Perl test module to check the version of perl required
+ Test::MinimumVersion is a simple test to look at the features you are using in
+ your code and determine the minimum version of the perl interpreter that is
+ required. This is helpful, for example, when you are using features like 'say'
+ which was introduced in Perl 5.10.
+ .
+ This test makes it easy to determine if your Perl code requires a newer perl
+ than expected, or if you accidentally made your dist require a newer version
+ than strictly necessary.

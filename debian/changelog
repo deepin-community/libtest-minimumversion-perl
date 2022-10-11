@@ -1,0 +1,155 @@
+libtest-minimumversion-perl (0.101082-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * Change order of alternative (build) dependencies.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.7.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 21 Feb 2016 19:52:58 +0100
+
+libtest-minimumversion-perl (0.101082-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Update Test::Tester build dependency.
+  * Add debian/upstream/metadata.
+  * Import upstream version 0.101082.
+  * Update years of packaging copyright.
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 07 Dec 2015 15:17:50 +0100
+
+libtest-minimumversion-perl (0.101081-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Email change: Salvatore Bonaccorso -> carnil@debian.org
+
+  [ gregor herrmann ]
+  * Remove version from perl (build) dependency.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 0.101081
+  * Drop (build-)dependency for libyaml-tiny-perl
+  * Update (build-)dependency for libperl-minimumversion-perl.
+    Update Build-Depends-Indep and Depends on libperl-minimumversion-perl to
+    a versioned dependency on (>= 1.32).
+  * Add (build-)dependency for CPAN::Meta.
+    Add alternative Build-Depends-Indep and Depends on  perl (>= 5.13.10) or
+    libcpan-meta-perl.
+  * Update Debhelper compat level to 8.
+    Adjust versioned Build-Depends on debhelper to (>= 8)
+  * Update copyright years for debian/* packaging
+  * Bump Standards-Version to 3.9.5
+  * Explicitly refer to GPL-1 license text in common-licenses
+  * Refer to Debian systems in general instead of only Debian GNU/Linux
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 05 Dec 2013 20:03:14 +0100
+
+libtest-minimumversion-perl (0.101080-1) unstable; urgency=low
+
+  * New upstream release
+    - fixes Perl 5.12 related test failures in other modules
+      (Closes: #578487).
+  * Add myself to Uploaders. 
+  * Refresh debian/copyright: Update Copyright for debian/* packaging. 
+  * Remove comment lines in debian/watch file. 
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Tue, 20 Apr 2010 14:44:54 +0200
+
+libtest-minimumversion-perl (0.101050-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: bump Format-Specification, update years of upstream
+    copyright, remove info about removed third-party files.
+  * Explicitly (build) depend on libfile-find-rule-perl.
+  * Add /me to Uploaders.
+  * Set Standards-Version to 3.8.4 (no changes).
+  * Convert to source format 3.0 (quilt).
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 18 Apr 2010 14:58:43 +0200
+
+libtest-minimumversion-perl (0.013-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Update to new DEP5 copyright format
+  * Standards-Version 3.8.3 (drop perl version dep)
+  * Update dependencies per upstream
+
+  [ Ryan Niebur ]
+  * Update jawnsy's email address
+  * Update ryan52's email address
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sun, 17 Jan 2010 16:01:21 -0500
+
+libtest-minimumversion-perl (0.011-1) unstable; urgency=low
+
+  * New upstream release
+    + Behaves better with subtests
+  * Added /me to Uploaders and Copyright
+  * Fixed the control description so it's clearer
+  * Standards-Version 3.8.2
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+ -- Jonathan Yu <frequency@cpan.org>  Mon, 29 Jun 2009 20:31:05 -0400
+
+libtest-minimumversion-perl (0.010-1) unstable; urgency=low
+
+  * New upstream release
+  * update dh7 usage
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Sun, 31 May 2009 14:17:59 -0700
+
+libtest-minimumversion-perl (0.009-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+
+  [ Ryan Niebur ]
+  * New upstream release
+  * Add myself to Uploaders
+  * Debian Policy 3.8.1
+  * machine readable copyright format
+
+  [ gregor herrmann ]
+  * Bump versioned dependency on libperl-minimumversion-perl to >= 1.20.
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Fri, 24 Apr 2009 08:19:42 -0700
+
+libtest-minimumversion-perl (0.008-1) unstable; urgency=low
+
+  * Initial release. (Closes: #495198: ITP: libtest-minimumversion-perl
+    -- perl module to test if code requires newer perl than expected)
+
+ -- Vincent Danjean <vdanjean@debian.org>  Fri, 15 Aug 2008 11:58:02 +0200
